@@ -1,27 +1,49 @@
-/* Reset styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header styling */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 65px;
     background-color: #052049;
-    padding: 0 23px; /* Giver afstand fra venstre og højre kant */
+    padding: 0 23px; 
+    border-bottom: 1px solid #363636;
 }
 
-/* Logo styling */
+
 .logo {
     height: 24px;
-    width: 24px; /* Sikrer, at logo og ikon har samme størrelse */
+    width: auto;
 }
 
-/* Icon styling */
-.person-icon {
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 200px;
     color: #9BC19F;
+    cursor: pointer;
+}
+
+.image-container {
+    text-align: center;
+    border-bottom: 1px solid #363636;
+
+}
+
+.radar-image {
+    width: 393px;
+    height: 393px;
+    border-bottom: 1px solid #363636;
+}
+
+.divider {
+    height: 1px;
+    background-color: #363636;
 }
