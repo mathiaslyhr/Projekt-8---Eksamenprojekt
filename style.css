@@ -120,3 +120,40 @@ main {
     height: 1px;
     background-color: #363636;
 }
+
+.instagram-post {
+    width: 393px;
+    background-color: #052049;
+    color: #9BC19F;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-icon {
+    font-size: 30px;
+}
+
+.post-dots {
+    font-size: 24px;
+}
+
+.post-footer {
+    padding: 10px;
+}
+
+.heart-icon, .comment-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.post-footer p {
+    margin-top: 10px;
+    color: #9BC19F;
+    font-size: 14px;
+}
