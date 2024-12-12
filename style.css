@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #052049;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    background-color: #052049;
     padding: 0 23px; 
     border-bottom: 1px solid #363636;
 }
@@ -32,15 +34,16 @@ header {
 }
 
 .image-container {
-    text-align: center;
     border-bottom: 1px solid #363636;
-
+    padding: 0;
+    margin: 0;
 }
 
 .radar-image {
     width: 393px;
     height: 393px;
-    border-bottom: 1px solid #363636;
+    display: block;
+    margin: 0 auto;
 }
 
 .divider {
