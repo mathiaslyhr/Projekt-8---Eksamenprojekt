@@ -1,0 +1,27 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: #052049;
+    padding: 0 23px; /* Giver afstand fra venstre og højre kant */
+}
+
+/* Logo styling */
+.logo {
+    height: 24px;
+    width: 24px; /* Sikrer, at logo og ikon har samme størrelse */
+}
+
+/* Icon styling */
+.person-icon {
+    color: #9BC19F;
+}
