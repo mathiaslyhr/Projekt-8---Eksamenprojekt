@@ -385,3 +385,21 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(14px);
 }
+
+.del-button {
+    height: 30px;
+    width: 60px;
+    background-color: #9BC19F;
+    color: #052049;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 23px;
+    bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
