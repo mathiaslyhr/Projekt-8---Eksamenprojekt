@@ -471,3 +471,77 @@ input[type="file"] {
     display: none;
 }
 
+.membership-content {
+    padding: 20px;
+    background-color: #052049;
+    text-align: center;
+    color: #9BC19F;
+}
+
+.membership-content h2,
+.membership-content h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.membership-content .description {
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.membership-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.membership-content ul li {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.input-label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #9BC19F;
+    text-align: left;
+    margin-bottom: 5px;
+    position: relative; 
+    top: 12px;
+}
+.input-field {
+    padding: 10px;
+    border: 2px solid #9BC19F;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(155, 193, 159, 0.5);
+}
+
+.submit-button {
+    background-color: #9BC19F;
+    color: #052049;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
