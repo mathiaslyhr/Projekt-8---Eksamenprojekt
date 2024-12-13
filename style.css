@@ -403,3 +403,71 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
 }
+
+.image-upload-container {
+    width: 393px;
+    height: 393px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #363636;
+    background-color: #052049;
+    text-align: center;
+    position: relative;
+}
+
+.image-upload-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.image-upload-box {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #9BC19F;
+    background-color: #1f2b42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-upload-box p {
+    color: #9BC19F;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.change-image-btn {
+    background-color: #9BC19F;
+    color: #052049;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -40px;
+    left: 23px;
+    padding: 5px 20px;
+    display: none;
+}
+

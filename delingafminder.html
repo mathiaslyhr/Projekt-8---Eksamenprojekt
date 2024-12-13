@@ -21,9 +21,19 @@
     </header>
 
     <main>
-
+        <div class="image-upload-container">
+            <label for="fileInput" class="image-upload-label">
+                <div class="image-upload-box">
+                    <p>Klik her for at vælge billede</p>
+                </div>
+            </label>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" />
+            <img id="imagePreview" class="image-preview" src="" alt="Billede preview" />
+            <button id="changeImageBtn" class="change-image-btn" onclick="resetImage()">Ændr billede</button>
+        </div>
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
