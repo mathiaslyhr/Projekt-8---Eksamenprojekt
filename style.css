@@ -294,3 +294,21 @@ a {
     margin-top: 10px;
     cursor: pointer;
 }
+
+.filtrer-knap {
+    height: 30px;
+    width: 90px;
+    background-color: #9BC19F;
+    color: #052049;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    text-align: center;
+}
+
