@@ -259,8 +259,9 @@ a {
 .artist-info {
     display: flex;
     align-items: center;
-    margin-left: 23px;
     margin-top: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 .artist-info img {
@@ -270,16 +271,20 @@ a {
     margin-right: 20px;
 }
 
-.artist-info .artist-name {
-    font-weight: 600; /* Semi-bold */
-    font-size: 14px;
-    color: #9BC19F;
+.artist-details {
+    display: flex;
+    flex-direction: column;
 }
 
-.artist-info .artist-description {
-    font-weight: normal;
+.artist-name, .artist-description {
+    font-weight: 600;
     font-size: 14px;
     color: #9BC19F;
+    margin: 0;
+}
+
+.artist-description {
+    font-weight: normal;
     margin-top: 5px;
 }
 
