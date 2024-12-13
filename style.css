@@ -223,3 +223,69 @@ footer .material-symbols-outlined {
 a {
     text-decoration: none;
 }
+
+.artist-header {
+    height: 116px;
+    width: 393px;
+    background-color: #052049;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 23px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #363636;
+}
+
+.artist-header h1 {
+    color: #9BC19F;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.artist-header .back-icon {
+    font-size: 24px;
+    color: #9BC19F;
+    cursor: pointer;
+    position: absolute;
+    left: 23px;
+    bottom: 10px;
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+
+.artist-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.artist-info .artist-name {
+    font-weight: 600; /* Semi-bold */
+    font-size: 14px;
+    color: #9BC19F;
+}
+
+.artist-info .artist-description {
+    font-weight: normal;
+    font-size: 14px;
+    color: #9BC19F;
+    margin-top: 5px;
+}
+
+.spotify-link img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    cursor: pointer;
+}
