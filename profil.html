@@ -20,23 +20,28 @@
     </header>
 
     <main>
-        <div class="profile-content">
-            <div class="profile-picture-container">
-                <img src="placeholder.jpg" alt="Profilbillede" class="profile-picture" />
-                <p class="edit-text">Rediger profilbillede</p>
-            </div>
 
-            <div class="profile-details">
-                <p><span class="detail-label">Navn:</span> Emma Christina Jensen</p>
-                <p><span class="detail-label">Brugernavn:</span> Emma.Jensen</p>
-            </div>
-
-            <button class="security-button">
-                <span>Adgangskode og sikkerhed</span>
-                <i class="material-symbols-outlined">chevron_right</i>
-            </button>
+        <div class="profile-image">
+            <span class="material-symbols-outlined profile-icon">account_circle</span>
+            <p class="edit-image">Rediger billede</p>
         </div>
+
+        <div class="profile-details">
+            <div>
+                <span class="detail-label">Navn: </span><span class="editable" contenteditable="true">Emma Christina Jensen</span>
+            </div>
+            <div>
+                <span class="detail-label">Brugernavn: </span><span class="editable" contenteditable="true">Emma.Jensen</span>
+            </div>
+        </div>
+
+        <button class="security-button">
+            <span>Adgangskode og sikkerhed</span>
+            <i class="material-symbols-outlined">chevron_right</i>
+        </button>
+
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -42,7 +42,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     min-height: 100vh;
     padding-bottom: 65px;
     
@@ -544,4 +544,94 @@ input[type="file"] {
     cursor: pointer;
     text-align: center;
     margin-top: 20px;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    font-size: 80px !important;
+    color: #9BC19F;
+    margin-top: 20px;
+}
+
+.edit-image {
+    font-weight: 600;
+    font-size: 14px;
+    color: #9BC19F;
+    margin-top: 10px;
+}
+
+.profile-details {
+    padding-left: 23px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.detail-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #9BC19F;
+    margin-right: 10px;
+}
+
+.profile-details span {
+    display: inline-block;
+    margin-top: 5px;
+    color: #9BC19F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.editable {
+    display: inline-block;
+    margin-top: 5px;
+    color: #9BC19F;
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+    border-bottom: 1px solid transparent;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.editable:focus {
+    border-bottom: 1px solid #9BC19F;
+    animation: blinkCaret 0.8s step-end infinite;
+}
+
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.security-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9BC19F;
+    color: #052049;
+    border: none;
+    height: 34px;
+    width: 348px;
+    border-radius: 50px;
+    position: relative;
+    left: 23px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.security-button span {
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.security-button i {
+    font-size: 24px;
+    color: #052049;
 }

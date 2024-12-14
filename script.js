@@ -22,3 +22,22 @@ function resetImage() {
     document.getElementById('fileInput').value = "";
     document.getElementById('changeImageBtn').style.display = 'none';
 }
+
+document.querySelectorAll('.editable').forEach(function (element) {
+    element.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            saveText(element);
+            element.blur();
+        }
+
+        if (element.textContent.length > 20) {
+            element.textContent = element.textContent.slice(0, 20);
+        }
+    });
+});
+
+function saveText(element) {
+    const newText = element.textContent;
+    console.log("Gemmer tekst:", newText);
+}
