@@ -519,9 +519,10 @@ input[type="file"] {
     color: #9BC19F;
     text-align: left;
     margin-bottom: 5px;
-    position: relative; 
+    position: relative;
     top: 12px;
 }
+
 .input-field {
     padding: 10px;
     border: 2px solid #9BC19F;
@@ -529,7 +530,21 @@ input[type="file"] {
     font-size: 14px;
     width: 100%;
     background-color: transparent;
-    color: rgba(155, 193, 159, 0.5);
+    color: #9BC19F;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #9BC19F;
 }
 
 .submit-button {
@@ -545,6 +560,7 @@ input[type="file"] {
     text-align: center;
     margin-top: 20px;
 }
+
 
 .profile-image {
     text-align: center;
