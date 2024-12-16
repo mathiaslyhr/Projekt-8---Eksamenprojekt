@@ -20,15 +20,12 @@ header {
     position: relative;
     padding: 0 23px; 
     border-bottom: 1px solid #363636;
-
 }
-
 
 .logo {
     height: 24px;
     width: auto;
 }
-
 
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
@@ -45,7 +42,8 @@ main {
     align-items: left;
     min-height: 100vh;
     padding-bottom: 65px;
-    
+    width: 393px; /* Fixed width for main */
+    margin: 0 auto; /* Center the content */
 }
 
 .image-container {
@@ -54,13 +52,15 @@ main {
     border-bottom: 1px solid #363636;
     padding: 0;
     margin: 0;
+    width: 393px; /* Fixed width */
 }
 
 .billeder {
-    width: 393px;
-    height: 393px;
+    width: 393px; /* Fixed width */
+    height: 393px; /* Fixed height */
     display: block;
     margin: 0 auto;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
 }
 
 .box1 {
@@ -84,7 +84,7 @@ main {
 }
 
 .new-box {
-    width: 393px;
+    width: 393px; /* Fixed width */
     height: 80px;
     background-color: #9BC19F;
     display: flex;
@@ -122,17 +122,16 @@ main {
     }
 }
 
-
 .divider {
     height: 1px;
     background-color: #363636;
-    width: 393px;
+    width: 393px; /* Fixed width */
     margin: 0 auto;
     padding: 0;
 }
 
 .instagram-post {
-    width: 393px;
+    width: 393px; /* Fixed width */
     background-color: #052049;
     color: #9BC19F;
 }
@@ -144,9 +143,12 @@ main {
     padding: 10px;
 }
 
-.profile-icon {
-    font-size: 30px;
+.custom-icon-size {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
 }
+
 
 .post-dots {
     font-size: 24px;
@@ -169,23 +171,21 @@ main {
 }
 
 footer {
-    height: 65px;
-    width: 393px;
-    background-color: #052049;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    height: 65px;
+    width: 393px; /* Fixed width */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #052049;
 }
 
 footer .material-symbols-outlined {
     font-size: 28px;
     color: #9BC19F;
-    cursor: pointer;
 }
 
 .artist-header {
@@ -650,4 +650,50 @@ input[type="file"] {
 .security-button i {
     font-size: 24px;
     color: #052049;
+}
+
+.sidebar {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 100%;
+    background-color: #052049;
+    color: #9BC19F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    border-right: 1px solid #363636;
+}
+
+.sidebar a, .sidebar span {
+    margin: 6px 0;
+    font-size: 24px;
+    color: #9BC19F;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo {
+    width: 24px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        display: flex !important;
+    }
+
+    header, footer {
+        display: none !important;
+    }
+
+    main {
+        margin-top: 80px;
+    }
 }
