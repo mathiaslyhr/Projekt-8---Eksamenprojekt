@@ -11,27 +11,34 @@ body {
 
 header {
     height: 65px;
-    width: 393px;
+    width: 100%;
     background-color: #052049;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 23px; 
+    padding: 0 23px;
     border-bottom: 1px solid #363636;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.person-icon {
+    font-size: 30px;
+    color: #9BC19F;
 }
 
 .logo {
+    width: 24px;
     height: 24px;
-    width: auto;
 }
 
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';
     font-weight: bold;
     font-style: normal;
-    font-size: 200px;
+    font-size: 28px;
     color: #9BC19F;
     cursor: pointer;
 }
@@ -41,9 +48,9 @@ main {
     flex-direction: column;
     align-items: left;
     min-height: 100vh;
-    padding-bottom: 65px;
-    width: 393px; /* Fixed width for main */
-    margin: 0 auto; /* Center the content */
+    
+    width: 393px;
+    margin: 0 auto;
 }
 
 .image-container {
@@ -52,15 +59,15 @@ main {
     border-bottom: 1px solid #363636;
     padding: 0;
     margin: 0;
-    width: 393px; /* Fixed width */
+    width: 393px;
 }
 
 .billeder {
-    width: 393px; /* Fixed width */
-    height: 393px; /* Fixed height */
+    width: 393px;
+    height: 393px;
     display: block;
     margin: 0 auto;
-    object-fit: cover; /* Ensure images maintain aspect ratio */
+    object-fit: cover;
 }
 
 .box1 {
@@ -84,7 +91,7 @@ main {
 }
 
 .new-box {
-    width: 393px; /* Fixed width */
+    width: 393px;
     height: 80px;
     background-color: #9BC19F;
     display: flex;
@@ -125,13 +132,13 @@ main {
 .divider {
     height: 1px;
     background-color: #363636;
-    width: 393px; /* Fixed width */
+    width: 393px;
     margin: 0 auto;
     padding: 0;
 }
 
 .instagram-post {
-    width: 393px; /* Fixed width */
+    width: 393px;
     background-color: #052049;
     color: #9BC19F;
 }
@@ -171,22 +178,17 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 65px;
-    width: 393px; /* Fixed width */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #052049;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    margin-top: auto;
 }
 
 footer .material-symbols-outlined {
     font-size: 28px;
     color: #9BC19F;
 }
+
 
 .artist-header {
     height: 116px;
@@ -652,48 +654,186 @@ input[type="file"] {
     color: #052049;
 }
 
+/* Din eksisterende CSS */
+
 .sidebar {
-    display: none !important;
     position: fixed;
     top: 0;
     left: 0;
-    width: 65px;
+    width: 250px;
     height: 100%;
     background-color: #052049;
-    color: #9BC19F;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px;
+    box-sizing: border-box;
     border-right: 1px solid #363636;
-}
-
-.sidebar a, .sidebar span {
-    margin: 6px 0;
-    font-size: 24px;
-    color: #9BC19F;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    display: none;
 }
 
 .sidebar .logo {
     width: 24px;
-    height: auto;
-    margin-bottom: 20px;
+    margin: 0 0 20px 23px;
 }
 
-@media (min-width: 768px) {
+.menu {
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 23px;
+    text-decoration: none;
+    color: #9BC19F;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #1A3A5D;
+}
+
+.menu-item.active {
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.label {
+    font-size: 18px;
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .sidebar {
-        display: flex !important;
+        display: flex;
+        width: 65px;
+    }
+
+    .menu-item {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .icon {
+        margin-right: 0;
+    }
+
+    .label {
+        display: none;
+    }
+
+    /* Justering for at centrere main i den resterende plads til højre for sidebaren */
+    main {
+        padding-top: 65px; /* Top-padding for at give plads til header */
+        margin-left: 65px; /* Giver plads til den smalle sidebar */
+        width: calc(100% - 65px); /* Giver plads til sidebaren */
+        display: flex;
+        justify-content: center; /* Centrerer indholdet horisontalt */
+        align-items: center; /* Vertikal centrering */
+    }
+
+    footer {
+        display: none; /* Footer skal ikke vises på skærme over 768px */
+    }
+
+    /* Skjul header på skærme over 768px */
+    header {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        display: flex;
+        width: 224px;
+    }
+
+    .menu-item {
+        justify-content: flex-start;
+        padding: 10px 23px;
+    }
+
+    .label {
+        display: inline;
+    }
+
+    .icon {
+        margin-right: 12px;
     }
 
     header, footer {
-        display: none !important;
+        display: none; /* Footer og header skjules helt på større skærme */
     }
 
+    /* Justering for at centrere main i den resterende plads til højre for sidebaren */
     main {
-        margin-top: 80px;
+        padding-top: 65px; /* Top-padding for at give plads til header */
+        margin-left: 224px; /* Giver plads til den brede sidebar */
+        width: calc(100% - 224px); /* Giver plads til sidebaren */
+        display: flex;
+        justify-content: center; /* Centrerer indholdet horisontalt */
+        align-items: center; /* Vertikal centrering */
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+
+    header, footer {
+        display: block;
+        height: 65px; /* Sætter højden af header og footer til 65px */
+        display: flex;
+        justify-content: space-between; /* Placerer logo og profil ikon korrekt */
+        align-items: center; /* Vertikal centrering */
+        padding: 0 20px; /* Padding til venstre og højre */
+    }
+}
+
+header, footer {
+    position: relative;
+    background-color: #052049;
+    z-index: 10;
+    height: 65px; /* Fast højde for header og footer */
+}
+
+header .logo {
+    width: 40px; /* Størrelse på logoet */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Placerer ikonerne korrekt */
+    padding: 0 20px; /* Padding for at sikre lidt afstand fra kanterne */
+}
+
+footer span, footer a {
+    color: #9BC19F;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 24px;
+}
+
+footer .icon {
+    margin-right: 10px; /* Mellemrum mellem ikonerne */
+}
+
+/* Skjul footer på skærme over 768px */
+@media (min-width: 768px) {
+    footer {
+        display: none;
     }
 }
