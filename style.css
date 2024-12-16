@@ -654,8 +654,6 @@ input[type="file"] {
     color: #052049;
 }
 
-/* Din eksisterende CSS */
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -728,21 +726,19 @@ input[type="file"] {
         display: none;
     }
 
-    /* Justering for at centrere main i den resterende plads til højre for sidebaren */
     main {
-        padding-top: 65px; /* Top-padding for at give plads til header */
-        margin-left: 65px; /* Giver plads til den smalle sidebar */
-        width: calc(100% - 65px); /* Giver plads til sidebaren */
+        padding-top: 65px;
+        margin-left: 65px;
+        width: calc(100% - 65px);
         display: flex;
-        justify-content: center; /* Centrerer indholdet horisontalt */
-        align-items: center; /* Vertikal centrering */
+        justify-content: center;
+        align-items: center;
     }
 
     footer {
-        display: none; /* Footer skal ikke vises på skærme over 768px */
+        display: none;
     }
 
-    /* Skjul header på skærme over 768px */
     header {
         display: none;
     }
@@ -768,17 +764,16 @@ input[type="file"] {
     }
 
     header, footer {
-        display: none; /* Footer og header skjules helt på større skærme */
+        display: none;
     }
 
-    /* Justering for at centrere main i den resterende plads til højre for sidebaren */
     main {
-        padding-top: 65px; /* Top-padding for at give plads til header */
-        margin-left: 224px; /* Giver plads til den brede sidebar */
-        width: calc(100% - 224px); /* Giver plads til sidebaren */
+        padding-top: 65px;
+        margin-left: 224px;
+        width: calc(100% - 224px);
         display: flex;
-        justify-content: center; /* Centrerer indholdet horisontalt */
-        align-items: center; /* Vertikal centrering */
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -789,11 +784,11 @@ input[type="file"] {
 
     header, footer {
         display: block;
-        height: 65px; /* Sætter højden af header og footer til 65px */
+        height: 65px;
         display: flex;
-        justify-content: space-between; /* Placerer logo og profil ikon korrekt */
-        align-items: center; /* Vertikal centrering */
-        padding: 0 20px; /* Padding til venstre og højre */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
 }
 
@@ -801,17 +796,17 @@ header, footer {
     position: relative;
     background-color: #052049;
     z-index: 10;
-    height: 65px; /* Fast højde for header og footer */
+    height: 65px;
 }
 
 header .logo {
-    width: 40px; /* Størrelse på logoet */
+    width: 40px;
 }
 
 footer {
     display: flex;
-    justify-content: space-between; /* Placerer ikonerne korrekt */
-    padding: 0 20px; /* Padding for at sikre lidt afstand fra kanterne */
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 footer span, footer a {
@@ -828,12 +823,53 @@ footer span.material-symbols-outlined {
 }
 
 footer .icon {
-    margin-right: 10px; /* Mellemrum mellem ikonerne */
+    margin-right: 10px;
 }
 
-/* Skjul footer på skærme over 768px */
 @media (min-width: 768px) {
     footer {
         display: none;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .artist-header {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        padding-top: 65px;
+        text-align: center;
+    }
+
+    .profile-icon {
+        margin-bottom: 15px;
+    }
+
+    .edit-image {
+        margin-bottom: 15px;
+    }
+
+    .detail-label-editable {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .detail-label-editable input {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .security-button {
+        margin-top: 15px;
+    }
+}
+
