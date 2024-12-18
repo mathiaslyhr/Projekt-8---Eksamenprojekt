@@ -44,6 +44,9 @@ function saveText(element) {
     console.log("Gemmer tekst:", newText);
 }
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const emailField = document.getElementById('email');
     const passwordField = document.getElementById('password');
